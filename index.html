@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Oswald:wght@500;700&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261107d">
+<link rel="stylesheet" href="style.css?v=20261107f">
 <link rel="stylesheet" href="intro.css?v=20261105a">
 <link rel="stylesheet" href="tuning.css?v=20261105a">
 <!-- Telegram Mini App SDK + реклама Adsgram -->
@@ -25,7 +25,7 @@
   <div class="i-glow"></div>
   <div class="i-lines"></div>
   <div class="i-logo">
-    <img class="i-plate" src="logo-plate.png" alt="PLATE" draggable="false">
+    <img class="i-plate" src="logo-plate.png" onerror="this.style.display='none'" alt="PLATE" draggable="false">
     <div class="i-spin" role="img" aria-label="SPIN">
       <div class="i-win" data-t="s" data-n="10" style="left:-4.01%;--d:.7s;--t:1.3s"><div class="i-strip"></div></div>
       <div class="i-win" data-t="p" data-n="13" style="left:23.06%;--d:.7s;--t:1.7s"><div class="i-strip"></div></div>
@@ -53,7 +53,7 @@
 <div id="overlay"></div>
 
 <aside id="side">
-  <h1 class="logo" aria-label="Plate Spin"><img class="lg-plate" src="logo-plate.png" alt="" draggable="false"><img class="lg-spin" src="logo-spin.png" alt="" draggable="false"></h1>
+  <h1 class="logo" aria-label="Plate Spin"><img class="lg-plate" src="logo-plate.png" onerror="this.style.display='none'" alt="" draggable="false"><img class="lg-spin" src="logo-spin.png" onerror="this.style.display='none'" alt="" draggable="false"></h1>
   <nav>
     <button type="button" data-view="drop" class="active">Выпадение</button>
     <button type="button" data-view="info">Информация <span id="cInfo" class="cnt redcnt">!</span></button>
@@ -81,7 +81,6 @@
 
 <main>
   <section id="v-drop" class="active">
-    <div class="top-logo" aria-label="Plate Spin"><img class="lg-plate" src="logo-plate.png" alt="" draggable="false"><img class="lg-spin" src="logo-spin.png" alt="" draggable="false"></div>
     <div id="dropRing"></div>
     <div id="bar" hidden>
       <div class="rn"><span id="rname"></span><span class="pips" id="pips"></span></div>
